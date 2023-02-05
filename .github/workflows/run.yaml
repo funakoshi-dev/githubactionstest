@@ -1,0 +1,9 @@
+#pushが実行された場合に最新のGithubが準備したUbuntu環境で
+#echo "this is pen"というコマンドを実行する
+name: learn-github-actions
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this is pen"
